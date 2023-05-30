@@ -12,5 +12,11 @@ public class Main {
 //            System.out.println(string);
 //        }
 
+        int number = 0;
+
+        while (number < 10) {
+            System.out.println(number+1);
+            number++;
+    }
     }
 }
