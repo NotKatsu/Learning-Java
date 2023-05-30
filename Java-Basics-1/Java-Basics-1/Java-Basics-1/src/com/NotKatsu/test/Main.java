@@ -5,7 +5,15 @@ public class Main {
         String blank_sentence;
         String sentence = "This is my sentence";
 
+        int number = 5;
+
+        double decimal_number = 104.2;
+
+        boolean true_boolean = true;
+        boolean false_boolean = false;
+
+        char letter = 'a';
+
         System.out.println(sentence);
-        System.out.println("This is my sentence");
     }
 }
