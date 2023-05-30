@@ -18,7 +18,7 @@ public class Main {
 //        }
 
         SecondClass secondClass = new SecondClass();
-
+        secondClass.test_print("test_print method has been ran.");
     }
 //    public static boolean check_if_contains(String message) {
 //        return message.toLowerCase().contains("world") || message.toLowerCase().contains("hello");
