@@ -17,6 +17,8 @@ public class Main {
 //            // e.printStackTrace();
 //        }
 
+        SecondClass secondClass = new SecondClass();
+
     }
 //    public static boolean check_if_contains(String message) {
 //        return message.toLowerCase().contains("world") || message.toLowerCase().contains("hello");
