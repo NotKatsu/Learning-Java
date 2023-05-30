@@ -4,5 +4,8 @@ public class Main {
     public static void main(String[] args) {
         String blank_sentence;
         String sentence = "This is my sentence";
+
+        System.out.println(sentence);
+        System.out.println("This is my sentence");
     }
 }
