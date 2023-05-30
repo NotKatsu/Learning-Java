@@ -8,5 +8,9 @@ public class Main {
             System.out.println(array[count]);
         }
 
+        for (String string : array) {
+            System.out.println(string);
+        }
+
     }
 }
