@@ -2,12 +2,12 @@ package com.NotKatsu.test;
 
 public class Main {
     public static void main(String[] args) {
-        int number = 2;
+        String message = "HELLo WorLd!";
 
-        if (number > 3) {
-            System.out.println("Number is greater than 3!");
+        if (message.toLowerCase().contains("world") == true) {
+            System.out.println("message contains the word world!");
         } else {
-            System.out.println("Number is less than 3!");
+            System.out.println("message does not contain the word world!");
         }
     }
 }
