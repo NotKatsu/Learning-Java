@@ -5,7 +5,7 @@ public class Car extends Vechicle {
         super(4, "Blue");
         calculate();
     }
-
+    
     public void handbrake() {
         System.out.println("Car has stopped...");
     }
