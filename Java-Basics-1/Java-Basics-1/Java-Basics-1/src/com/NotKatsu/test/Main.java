@@ -24,11 +24,12 @@ public class Main {
 
         Character letter_2 = 'a';
 
-        print_message("This is our message and it has been ran.");
-        print_message("Wow OUR message is so cool...");
+        int result = print_message("This is our message and it has been ran.");
+        System.out.println(result);
     }
 
-    private static void print_message(String message) {
-        System.out.println(message.toLowerCase());
+    private static int print_message(String message) {
+        System.out.println(message);
+        return 5;
     }
 }
