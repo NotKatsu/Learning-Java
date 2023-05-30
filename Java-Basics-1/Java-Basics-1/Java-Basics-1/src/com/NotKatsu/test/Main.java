@@ -4,15 +4,30 @@ public class Main {
     public static void main(String[] args) {
         // PRIMITIVE
         int number = 5;
+
         double decimal_number = 104.2;
+
         boolean true_boolean = true;
         boolean false_boolean = false;
+
         char letter = 'a';
-        
+
         // NON-PRIMITIVE
         String blank_sentence;
         String sentence = "This is my sentence";
 
-        System.out.println(sentence);
+        Integer number_2 = 5;
+        Double decimal_number_2 = 104.2;
+
+        Boolean true_boolean_2 = true;
+        Boolean false_boolean_2 = false;
+
+        Character letter_2 = 'a';
+
+        
+    }
+
+    private void print_message() {
+        System.out.println("Method works!");
     }
 }
