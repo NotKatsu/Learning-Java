@@ -1,5 +1,7 @@
 package com.notkatsu.test;
 
+import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -16,11 +18,19 @@ public class FreezeCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
         if (commandSender instanceof Player) {
-            if (commandSender.isOp()) {
-                Player player = (Player) commandSender;
-                frozenPlayers.add(player.getUniqueId());
+            if (strings.length == 1) {
+                Player player = Bukkit.getPlayer(strings[0]);
 
-                commandSender.sendMessage(player.getDisplayName() + " You have been frozen.. You can't move.");
+                if (player == null) {
+                    commandSender.sendMessage(ChatColor.RED + "[ERROR]" + ChatColor.WHITE + " That player does not exist..");
+                } else {
+                    frozenPlayers.add(player.getUniqueId());
+
+                    player.sendMessage(ChatColor.RED + player.getDisplayName() + ChatColor.WHITE + " You have been frozen and can't move..");
+                    commandSender.sendMessage(ChatColor.GREEN + player.getDisplayName() + ChatColor.WHITE + " Has been frozen successfully");
+                }
+            } else {
+                commandSender.sendMessage(ChatColor.RED + "[ERROR]" + ChatColor.WHITE + " You are missing an arguement to run this command.");
             }
         }
 

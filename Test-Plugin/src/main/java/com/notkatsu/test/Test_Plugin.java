@@ -18,8 +18,6 @@ public final class Test_Plugin extends JavaPlugin implements Listener {
 
     @EventHandler
     public void player_move_event(PlayerMoveEvent event) {
-        System.out.println(freezeCommand.frozenPlayers);
-
         if (freezeCommand.frozenPlayers.contains(event.getPlayer().getUniqueId())) {
             event.setCancelled(true);
         }
