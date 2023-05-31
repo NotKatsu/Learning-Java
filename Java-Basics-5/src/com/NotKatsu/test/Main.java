@@ -9,5 +9,17 @@ public class Main {
         } else if (word.equals("pear")) {
             System.out.println("Eww Pears are bad!!");
         }
+
+        switch (word) {
+            case "banana":
+                System.out.println("Wow banana");
+                break;
+            case "pear":
+                System.out.println("Ewww pear");
+                break;
+            case "kiwi":
+                System.out.println("These are kinda nice...");
+                break;
+        }
     }
 }
