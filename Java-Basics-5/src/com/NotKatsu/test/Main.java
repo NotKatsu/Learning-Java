@@ -1,7 +1,5 @@
 package com.NotKatsu.test;
 
-import java.util.Calendar;
-
 public class Main {
     public static void main(String[] args) {
 //        String word = "banana";
@@ -26,10 +24,10 @@ public class Main {
 //                System.out.println("At least give me a fruit..");
 //        }
 
-        Calendar calendar = Calendar.getInstance();
-        System.out.println(calendar.get(Calendar.DAY_OF_MONTH));
-
-        calendar.add(Calendar.DAY_OF_YEAR, 1);
-        System.out.println(calendar.get(Calendar.DAY_OF_MONTH));
+//        Calendar calendar = Calendar.getInstance();
+//        System.out.println(calendar.get(Calendar.DAY_OF_MONTH));
+//
+//        calendar.add(Calendar.DAY_OF_YEAR, 1);
+//        System.out.println(calendar.get(Calendar.DAY_OF_MONTH));
     }
 }
