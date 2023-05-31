@@ -1,5 +1,7 @@
 package com.NotKatsu.test;
 
+import java.util.Random;
+
 public class Main {
     public static void main(String[] args) {
 //        String word = "banana";
@@ -29,5 +31,11 @@ public class Main {
 //
 //        calendar.add(Calendar.DAY_OF_YEAR, 1);
 //        System.out.println(calendar.get(Calendar.DAY_OF_MONTH));
+
+        Random random = new Random();
+
+        for (int count = 0; count <= 100; count++) {
+            System.out.println(random.nextInt(10));
+        }
     }
 }
