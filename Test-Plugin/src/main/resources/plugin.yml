@@ -1,0 +1,7 @@
+name: Test-Plugin
+version: '${project.version}'
+main: com.notkatsu.test.Test_Plugin
+api-version: 1.19
+authors: [NotKatsu]
+description: This is my very first plugin!
+website: https://katsu.bio/
