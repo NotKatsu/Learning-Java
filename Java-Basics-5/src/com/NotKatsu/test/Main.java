@@ -2,7 +2,7 @@ package com.NotKatsu.test;
 
 public class Main {
     public static void main(String[] args) {
-        String word = "banana";
+        String word = "bean";
 
         if (word.equals("banana")) {
             System.out.println("Word is banana!");
@@ -15,11 +15,13 @@ public class Main {
                 System.out.println("Wow banana");
                 break;
             case "pear":
-                System.out.println("Ewww pear");
+                System.out.println("Ew pear");
                 break;
             case "kiwi":
                 System.out.println("These are kinda nice...");
                 break;
+            default:
+                System.out.println("At least give me a fruit..");
         }
     }
 }
